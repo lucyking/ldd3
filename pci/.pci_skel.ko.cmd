@@ -1,0 +1,1 @@
+cmd_/root/Desktop/kernel/pci/pci_skel.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /root/Desktop/kernel/pci/pci_skel.ko /root/Desktop/kernel/pci/pci_skel.o /root/Desktop/kernel/pci/pci_skel.mod.o

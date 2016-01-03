@@ -1,0 +1,1 @@
+cmd_/root/Desktop/kernel/scull/scull.o := ld -m elf_i386   -r -o /root/Desktop/kernel/scull/scull.o /root/Desktop/kernel/scull/main.o /root/Desktop/kernel/scull/pipe.o /root/Desktop/kernel/scull/access.o 

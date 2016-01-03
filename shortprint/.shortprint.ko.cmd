@@ -1,0 +1,1 @@
+cmd_/root/Desktop/kernel/shortprint/shortprint.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /root/Desktop/kernel/shortprint/shortprint.ko /root/Desktop/kernel/shortprint/shortprint.o /root/Desktop/kernel/shortprint/shortprint.mod.o

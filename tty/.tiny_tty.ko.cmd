@@ -1,0 +1,1 @@
+cmd_/root/Desktop/kernel/tty/tiny_tty.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /root/Desktop/kernel/tty/tiny_tty.ko /root/Desktop/kernel/tty/tiny_tty.o /root/Desktop/kernel/tty/tiny_tty.mod.o

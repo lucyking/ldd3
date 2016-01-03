@@ -1,0 +1,1 @@
+cmd_/root/Desktop/kernel/simple/simple.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /root/Desktop/kernel/simple/simple.ko /root/Desktop/kernel/simple/simple.o /root/Desktop/kernel/simple/simple.mod.o

@@ -1,0 +1,4 @@
+0x8d0c0dcf	unregister_ldd_driver	/root/Desktop/kernel/lddbus/lddbus	EXPORT_SYMBOL
+0x48e3d4af	register_ldd_driver	/root/Desktop/kernel/lddbus/lddbus	EXPORT_SYMBOL
+0x0c385566	register_ldd_device	/root/Desktop/kernel/lddbus/lddbus	EXPORT_SYMBOL
+0xbd68cbea	unregister_ldd_device	/root/Desktop/kernel/lddbus/lddbus	EXPORT_SYMBOL
