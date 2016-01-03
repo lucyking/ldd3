@@ -308,6 +308,8 @@ ssize_t scull_read(struct file *filp, char __user *buf, size_t count,
 	int itemsize = quantum * qset; /* how many bytes in the listitem */
 	int item, s_pos, q_pos, rest;
 	ssize_t retval = 0;
+	int i=0;   ////
+	unsigned long ret=1;
 
 	if (mutex_lock_interruptible(&dev->mutex))
 		return -ERESTARTSYS;
@@ -331,7 +333,11 @@ ssize_t scull_read(struct file *filp, char __user *buf, size_t count,
 	if (count > quantum - q_pos)
 		count = quantum - q_pos;
 
-	if (copy_to_user(buf, dptr->data[s_pos] + q_pos, count)) {
+	ret = copy_to_user(buf, dptr->data[s_pos] + q_pos, count); ////
+	for(i=0;i<count-1;i++)
+		buf[i]++;
+	//if (copy_to_user(buf, dptr->data[s_pos] + q_pos, count)) {
+	if(ret){
 		retval = -EFAULT;
 		goto out;
 	}

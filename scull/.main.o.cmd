@@ -1,8 +1,8 @@
-cmd_/root/Desktop/kernel/scull/main.o := gcc -Wp,-MD,/root/Desktop/kernel/scull/.main.o.d  -nostdinc -isystem /usr/lib/gcc/i686-linux-gnu/5/include -I./arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO -O2 -I/root/Desktop/kernel/scull/../include  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(main)"  -D"KBUILD_MODNAME=KBUILD_STR(scull)" -c -o /root/Desktop/kernel/scull/.tmp_main.o /root/Desktop/kernel/scull/main.c
+cmd_/root/Desktop/kernel/ldd/scull/main.o := gcc -Wp,-MD,/root/Desktop/kernel/ldd/scull/.main.o.d  -nostdinc -isystem /usr/lib/gcc/i686-linux-gnu/5/include -I./arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO -O2 -I/root/Desktop/kernel/ldd/scull/../include  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(main)"  -D"KBUILD_MODNAME=KBUILD_STR(scull)" -c -o /root/Desktop/kernel/ldd/scull/.tmp_main.o /root/Desktop/kernel/ldd/scull/main.c
 
-source_/root/Desktop/kernel/scull/main.o := /root/Desktop/kernel/scull/main.c
+source_/root/Desktop/kernel/ldd/scull/main.o := /root/Desktop/kernel/ldd/scull/main.c
 
-deps_/root/Desktop/kernel/scull/main.o := \
+deps_/root/Desktop/kernel/ldd/scull/main.o := \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/sysfs.h) \
@@ -663,8 +663,8 @@ deps_/root/Desktop/kernel/scull/main.o := \
   arch/x86/include/asm/smap.h \
     $(wildcard include/config/x86/smap.h) \
   arch/x86/include/asm/uaccess_32.h \
-  /root/Desktop/kernel/scull/scull.h \
+  /root/Desktop/kernel/ldd/scull/scull.h \
 
-/root/Desktop/kernel/scull/main.o: $(deps_/root/Desktop/kernel/scull/main.o)
+/root/Desktop/kernel/ldd/scull/main.o: $(deps_/root/Desktop/kernel/ldd/scull/main.o)
 
-$(deps_/root/Desktop/kernel/scull/main.o):
+$(deps_/root/Desktop/kernel/ldd/scull/main.o):

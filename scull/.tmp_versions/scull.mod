@@ -1,2 +1,2 @@
-/root/Desktop/kernel/scull/scull.ko
-/root/Desktop/kernel/scull/main.o /root/Desktop/kernel/scull/pipe.o /root/Desktop/kernel/scull/access.o
+/root/Desktop/kernel/ldd/scull/scull.ko
+/root/Desktop/kernel/ldd/scull/main.o /root/Desktop/kernel/ldd/scull/pipe.o /root/Desktop/kernel/ldd/scull/access.o
